@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+:root {
+    --bg-color: white;
+}
+body {
+    font-family: 'Poor Story', cursive;
+    background-color: var(--bg-color);
+    transition: background-color 0.5s ease;
+}
+
+.button{
+    background-color: rgb(163, 156, 140);
+    border: 1px;
+    text-align: center;
+    color: aqua;
+    padding: auto;
+    font-size: 25px;
+}
+
+.yashik{
+    height: 100vh;
+    width: 95%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.CVETIK{
+    justify-content: center;
+    text-align: center;
+}
+
+.CVETIK h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: colorchange6 3s infinite alternate;
+    padding: 50px 50px;
+}
+
+.CVETIK h2{
+    border: 1px solid black;
+    font-size: 2rem;
+    margin-top: 15%;
+}
+
+@keyframes colorchange6{
+    0%{
+        color: blueviolet;
+    }
+    10%{
+        color: rgb(52, 51, 53);
+    }
+    20%{
+        color: rgb(36, 141, 62);
+    }
+    50%{
+        color: rgb(226, 168, 43);
+    }
+    70%{
+        color: rgb(25, 121, 53);
+    }
+    90%{
+        color: rgb(43, 226, 186);
+    }
+    100%{
+        color: rgb(177, 148, 204);
+    }
+}
+
+@media(max-width:480px){
+    .CVETIK h1{
+        font-size: 1.5rem;
+    }
+    .CVETIK h2{
+        font-size: 1.5rem;
+    }
+
+}
