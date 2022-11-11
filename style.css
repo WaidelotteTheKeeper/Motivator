@@ -1,16 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Neucha&family=Rampart+One&family=Rubik+Bubbles&family=Rubik+Mono+One&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
 
 :root {
     --bg-color: white;
 }
+
 body {
-    font-family: 'Poor Story', cursive;
-    background-color: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(202, 216, 238);
     transition: background-color 0.5s ease;
+    
 }
 
-.button{
+.mainText {
+    color: #202020;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    display: block;
+    margin: 70px 0 100px 0;
+    line-height: 80px;
+    text-shadow: 0 13.36px 8.896px #8cb3ce, 0 -2px 1px rgb(98, 154, 190);
+    letter-spacing: -4px;
+    font-family: 'Rubik Bubbles', cursive;
+    font-size: 150px;
+    text-transform: uppercase;
+    animation: colorchange6 5s ease infinite alternate;
+    padding: 50px 50px;
+    justify-content: center;
+    line-height: 1;
+}
+
+.button-36 {
+    background-image: linear-gradient(92.88deg, #5a8dda 9.16%, #5192e6 43.89%, #4a8de6 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-36:hover {
+    box-shadow: rgba(52, 122, 221, 0.5) 0 1px 30px;
+    transition-duration: .1s ease;
+}
+
+@media (min-width: 768px) {
+    .button-36 {
+        padding: 0 2.6rem;
+    }
+}
+
+
+.smile {
+    padding: auto;
+    border: 1px;
+
+}
+
+.button {
     background-color: rgb(163, 156, 140);
     border: 1px;
     text-align: center;
@@ -19,63 +79,123 @@ body {
     font-size: 25px;
 }
 
-.yashik{
-    height: 100vh;
-    width: 95%;
+.yashik {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-items: center;
-    align-items: center;
+    align-items: top;
     justify-content: center;
-    
+
 }
 
-.CVETIK{
-    justify-content: center;
+.CVETIK {
+    justify-content: top;
     text-align: center;
 }
 
-.CVETIK h1{
-    font-size: 2rem;
+.CVETIK h1 {
+    font-family: 'Rubik Bubbles', cursive;
+    font-size: 150px;
     text-transform: uppercase;
-    animation: colorchange6 3s infinite alternate;
+    animation: colorchange6 5s ease infinite alternate;
     padding: 50px 50px;
+    justify-content: center;
 }
 
-.CVETIK h2{
-    border: 1px solid black;
-    font-size: 2rem;
+.CVETIK h2 {
+    font-size: 50px;
     margin-top: 15%;
 }
 
-@keyframes colorchange6{
-    0%{
-        color: blueviolet;
+.motivate {
+
+    border-radius: 25% 10% 25% 10%;
+    padding: 20px;
+}
+
+.motivation1 {
+    
+    padding: 1rem;
+    width: 420px;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+        0 5px 15px 0 rgba(0, 0, 0, 0.08);
+    background-color: rgba(rgb(255, 255, 255)(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), alpha 50%);
+    border-radius: 0.5rem;
+    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+    line-height: 2;
+
+}
+
+
+
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@keyframes colorchange6 {
+
+
+    0% {
+        color: rgb(67, 152, 221);
     }
-    10%{
-        color: rgb(52, 51, 53);
-    }
-    20%{
-        color: rgb(36, 141, 62);
-    }
-    50%{
-        color: rgb(226, 168, 43);
-    }
-    70%{
-        color: rgb(25, 121, 53);
-    }
-    90%{
-        color: rgb(43, 226, 186);
-    }
-    100%{
-        color: rgb(177, 148, 204);
+
+    100% {
+        color: rgb(45, 142, 221);
     }
 }
 
-@media(max-width:480px){
-    .CVETIK h1{
+@media(max-width:480px) {
+    .CVETIK h1 {
         font-size: 1.5rem;
     }
-    .CVETIK h2{
+
+    .CVETIK h2 {
         font-size: 1.5rem;
     }
 
