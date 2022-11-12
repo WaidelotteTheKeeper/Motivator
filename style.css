@@ -6,11 +6,25 @@
     --bg-color: white;
 }
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(202, 216, 238);
     transition: background-color 0.5s ease;
-    
+
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
 }
 
 .mainText {
@@ -18,7 +32,7 @@ body {
     text-transform: uppercase;
     letter-spacing: -2px;
     display: block;
-    margin: 70px 0 100px 0;
+    margin: 0;
     line-height: 80px;
     text-shadow: 0 13.36px 8.896px #8cb3ce, 0 -2px 1px rgb(98, 154, 190);
     letter-spacing: -4px;
@@ -33,23 +47,25 @@ body {
 
 .button-36 {
     background-image: linear-gradient(92.88deg, #5a8dda 9.16%, #5192e6 43.89%, #4a8de6 64.72%);
-    border-radius: 8px;
+    /* border-radius: 8px; */
     border-style: none;
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
     flex-shrink: 0;
     font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 16px;
+    font-size: 2rem;
     font-weight: 500;
-    height: 4rem;
-    padding: 0 1.6rem;
+    height: 150px;
+    width: 100%;
+    padding: 0 24px;
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
     transition: all .5s;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+   
 }
 
 .button-36:hover {
@@ -65,8 +81,9 @@ body {
 
 
 .smile {
-    padding: auto;
+    padding: 20px auto;
     border: 1px;
+
 
 }
 
@@ -80,7 +97,7 @@ body {
 }
 
 .yashik {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-items: center;
@@ -89,24 +106,39 @@ body {
 
 }
 
+
 .CVETIK {
     justify-content: top;
     text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .CVETIK h1 {
-    font-family: 'Rubik Bubbles', cursive;
-    font-size: 150px;
+    font-family: 'NikkyouSans';
+    font-size: 8rem;
     text-transform: uppercase;
     animation: colorchange6 5s ease infinite alternate;
-    padding: 50px 50px;
     justify-content: center;
 }
 
 .CVETIK h2 {
-    font-size: 50px;
-    margin-top: 15%;
+    font-size: 4rem;
+
 }
+
+/* x-magic-card {
+    z-index: 100;
+}
+
+.card-content {
+    height: 200px;
+    width: 200px;
+    
+} */
 
 .motivate {
 
@@ -115,17 +147,19 @@ body {
 }
 
 .motivation1 {
-    
+    font-family: 'LetoTextSansDefect';
     padding: 1rem;
     width: 420px;
     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
-        0 5px 15px 0 rgba(0, 0, 0, 0.08);
-    background-color: rgba(rgb(255, 255, 255)(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), alpha 50%);
+        0 5px 15px 0 rgba(111, 156, 224, 0.08);
+    background-color: rgba(rgb(255, 255, 255)(255, 255, 255), rgb(54, 98, 241), rgb(255, 255, 255), alpha 50%);
     border-radius: 0.5rem;
     transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
     line-height: 2;
 
 }
+
+
 
 
 
@@ -190,7 +224,7 @@ body {
     }
 }
 
-@media(max-width:480px) {
+/* @media (max-width:480px) {
     .CVETIK h1 {
         font-size: 1.5rem;
     }
@@ -199,4 +233,65 @@ body {
         font-size: 1.5rem;
     }
 
+}
+
+@media (max-width:320px) {
+    .mainText {
+        font-size: 0.8rem;
+    }
+    .motivationText {
+        width: 320px;
+    }
+} */
+
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 4px;
+       
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+    html {
+        font-size: 6px;
+        
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 760px) {
+    html {
+        font-size: 12px;
+        
+    }
+}
+
+
+
+
+@font-face {
+    font-family: "gogono-cocoa-mochi-cyrillic";
+    src: url("fonts/gogono-cocoa-mochi-cyrillic.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Ermilov-bold";
+    src: url("fonts/Ermilov-bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "NikkyouSans";
+    src: url("fonts/NikkyouSans.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "LetoTextSansDefect";
+    src: url("fonts/LetoTextSansDefect.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
 }
