@@ -135,6 +135,7 @@ footer {
 
 .CVETIK h2 {
     font-size: 4rem;
+    color: #2e2e2e;
 
 }
 
@@ -164,6 +165,7 @@ footer {
     border-radius: 0.5rem;
     transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
     line-height: 2;
+
 
 }
 
