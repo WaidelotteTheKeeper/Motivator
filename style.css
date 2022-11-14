@@ -17,8 +17,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(202, 216, 238);
     transition: background-color 0.5s ease;
-
-
 }
 
 footer {
@@ -53,7 +51,6 @@ footer {
 
 .button-36 {
     background-image: linear-gradient(92.88deg, #5a8dda 9.16%, #5192e6 43.89%, #4a8de6 64.72%);
-    /* border-radius: 8px; */
     border-style: none;
     box-sizing: border-box;
     color: #FFFFFF;
@@ -89,9 +86,9 @@ footer {
 .smile {
     padding: 20px auto;
     border: 1px;
-
-
+    transform: scale(1.2);
 }
+
 
 .button {
     background-color: rgb(163, 156, 140);
@@ -101,16 +98,6 @@ footer {
     padding: auto;
     font-size: 25px;
 }
-
-/* .yashik {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: top;
-    justify-content: center;
-
-} */
 
 
 .CVETIK {
@@ -131,6 +118,7 @@ footer {
     text-transform: uppercase;
     animation: colorchange6 5s ease infinite alternate;
     justify-content: center;
+    
 }
 
 .CVETIK h2 {
@@ -138,16 +126,6 @@ footer {
     color: #2e2e2e;
 
 }
-
-/* x-magic-card {
-    z-index: 100;
-}
-
-.card-content {
-    height: 200px;
-    width: 200px;
-    
-} */
 
 .motivate {
 
@@ -214,6 +192,64 @@ footer {
     font-weight: bold;
 }
 
+.choise-name {
+    width: 100%;
+    color: #2e2e2e;
+    display: block;
+    background: #e3f0f7;
+    text-align: center;
+    padding: 0.55em 1em;
+    box-sizing: border-box;
+    border-radius: 0.2em;
+}
+
+.name {
+    position: absolute;
+    top: 50%;
+    margin:1em auto;
+    cursor: pointer;  
+    
+}
+
+.name select {
+    background-color: #66abe4;
+    
+    color: white;
+    padding: 12px;
+    width: 250px;
+    border: none;
+    border-radius: 25px;
+    font-size: 2rem;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+
+.name select:hover {
+    box-shadow: rgba(52, 122, 221, 0.5) 0 1px 30px;
+    transition-duration: .1s ease;
+}
+
+option {
+    width: 4rem;
+}
+
+.trueName {
+    font-family: 'LetoTextSansDefect';
+    font-size: 4rem;
+    color: #2e2e2e;
+}
+
+label span {
+	--display: none;
+	display: var(--display);
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid #727272;
+	border-radius: 3px;
+}
+
 .close:hover,
 .close:focus {
     color: black;
@@ -221,16 +257,27 @@ footer {
     cursor: pointer;
 }
 
+.CVETIK h1:hover:after {
+    content: " (НЕТ)";
+    margin: 0;
+    font-family: 'NikkyouSans';
+    font-size: 8rem;
+    text-transform: uppercase;
+    animation: colorchange6 5s infinite ease alternate;
+    justify-content: center;
+}
+
+
 
 @keyframes colorchange6 {
 
 
     0% {
-        color: rgb(67, 152, 221);
+        color: rgb(79, 159, 250);
     }
 
     100% {
-        color: rgb(45, 142, 221);
+        color: rgb(51, 158, 247);
     }
 }
 
