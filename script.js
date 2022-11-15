@@ -170,25 +170,25 @@ const first_arguments = [
     { text: "Ты все упустил!", meta: {}},
     { text: "И что ты будешь делать?", meta: {}},
     { text: "Ты неудачник!", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
+    { text: "Ты мусорный пес!", meta: {}},
+    { text: "Ты грязная шлюха!", meta: {}},
+    { text: "Ты злобная дрянь!", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
 
 
 
@@ -335,7 +335,7 @@ const second_arguments = [
     { text: " Ты из нисшего класа!", meta: {} },
     { text: " Не пей шампунь!", meta: {} },
     { text: " Стыдись!", meta: {} },
-    { text: " Сядь ка на хер!", meta: {} },
+    { text: " Сядь-ка на хер!", meta: {} },
     { text: " Желаю удачи!", meta: {} },
     { text: " Я знаю, что ты извращенец!", meta: {} },
     { text: " Да ты сосешь по жизни!", meta: {} },
@@ -346,26 +346,26 @@ const second_arguments = [
     { text: " Тебе этого не скрыть!", meta: {} },
     { text: " Тебе стыдно?", meta: {} },
     { text: " Твое лицо о многом говорит.", meta: {} },
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
-    // {text:"", meta: {}},
+    { text: " Я чувствую бедность твоей души.", meta: {}},
+    { text: " У тебя сильная депрессия!", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
+    // { text: "", meta: {}},
 
 ];
 
@@ -392,8 +392,11 @@ function motiv() {
 }
 
 document.addEventListener("keydown", e => {
+    e.preventDefault();
+    e.stopPropagation();
     if (e.code == "Space" 
-        || e.key == "m") {
+        || e.key == "m"
+        || e.key == "ь") {
         motiv();
         speakText();
     }
