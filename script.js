@@ -408,21 +408,22 @@ const picker2 = createRandomPicker(second_arguments);
 function motiv() {
   let motivation = '';
   let name = document.getElementsByClassName('name')[0].value;
+    
+      if (name != "") {
+        name = `${name}! `;
+      }
+    
   // const random1st = Math.floor(Math.random() * first_arguments.length);
   // console.log(random1st);
   // const random2nd = Math.floor(Math.random() * second_arguments.length);
   // console.log(random2nd);
-  motivation += `${name}! ` + picker1.get().text + picker2.get().text;
+  motivation += name + picker1.get().text + picker2.get().text;
   // motivation += first_arguments[random1st].text + second_arguments[random2nd].text;
   console.log(motivation);
   document.getElementById("motivation").innerHTML = motivation;
   document.getElementById("motivation").classList.add("motivation1");
   document.getElementById("motivation").classList.add("motivation1-wrapper");
-  let repeat = "";
-  document.getElementById("repeat").innerHTML = repeat;
-  document.getElementById("repeat").classList.add("repeat1");
-  document.getElementById("repeat").classList.add("repeat-wrapper");
-
+  
 
 }
 
