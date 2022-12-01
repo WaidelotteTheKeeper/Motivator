@@ -19,6 +19,8 @@ body {
     transition: background-color 0.5s ease;
 }
 
+
+
 .repeat1 {
     background: url(img/repeat-50.png) no-repeat;
     width: 50px;
@@ -154,6 +156,35 @@ footer {
 
 }
 
+.muteBtn {
+    /* background: url("img/muteF.png") no-repeat; */
+    position:fixed;
+    width: 40px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    margin-right: 3%;
+    margin-top: 3%;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.mute1 {
+    background: url("img/muteActive.png") no-repeat;
+    position:fixed;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    margin-right: 3%;
+    margin-top: 3%;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
 
 .CVETIK h2 {
     font-size: 4rem;
@@ -187,6 +218,8 @@ footer {
     z-index: 1;
     left: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -223,6 +256,7 @@ input[type=text] {
 .modal-content {
     background-color: #fefefe;
     margin: 35% auto;
+    margin-top: 20%;
     padding: 20px;
     width: 200px;
     border-radius: 25px;

@@ -184,15 +184,39 @@ const first_arguments = [
   { text: "Ты заблудшая душа!", meta: {} },
   { text: "Ты не знаешь, что делаешь!", meta: {} },
   { text: "Ты ничтожество!", meta: {} },
-  { text: "Ты ничем не лучше других!", meta: {}},
-  { text: "За моего отца!", meta: {}},
-  { text: "В любом случае.", meta: {}},
-  { text: "Ты скучный!", meta: {}},
-  { text: "Тебя продали!", meta: {}},
-  { text: "Ты слишком тихий!", meta: {}},
-  { text: "Ты неразборчивый.", meta: {}},
-  { text: "Ты неуравновешенный!", meta: {}},
-  { text: "Ты обнюханный!", meta: {}},
+  { text: "Ты ничем не лучше других!", meta: {} },
+  { text: "За моего отца!", meta: {} },
+  { text: "В любом случае.", meta: {} },
+  { text: "Ты скучный!", meta: {} },
+  { text: "Тебя продали!", meta: {} },
+  { text: "Ты слишком тихий!", meta: {} },
+  { text: "Ты неразборчивый.", meta: {} },
+  { text: "Ты неуравновешенный!", meta: {} },
+  { text: "Ты обнюханный!", meta: {} },
+  { text: "Ты жоподер!", meta: {} },
+  { text: "Ты мелкий!", meta: {} },
+  { text: "Ты позорище!", meta: {} },
+  { text: "Здравствуй, малыш!", meta: {} },
+  { text: "Трагедия!", meta: {} },
+  { text: "Клевые соски, сладкий!", meta: {} },
+  { text: "Ты лжец!", meta: {} },
+  { text: "Ты жестокий!", meta: {} },
+  { text: "Ты проститутка!", meta: {} },
+  { text: "Ты пьяница!", meta: {} },
+  { text: "Ты пьян?", meta: {} },
+  { text: "Ах ты грязный врунишка!", meta: {} },
+  { text: "Ты прикидываешься или реально скатился?", meta: {} },
+  { text: "Ради чего все это?", meta: {} },
+  { text: "А ты тут откуда взялся?", meta: {} },
+  { text: "Ты кишечный паразит!", meta: {}},
+  { text: "Здесь нельзя оставаться!", meta: {}},
+  { text: "Ты главный коров!", meta: {}},
+  { text: "На что ты тратишь жизнь?", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
   // { text: "", meta: {}},
   // { text: "", meta: {}},
   // { text: "", meta: {}},
@@ -368,24 +392,69 @@ const second_arguments = [
   { text: " Шутки кончились!", meta: {} },
   { text: " Время вышло!", meta: {} },
   { text: " Тебе не ведом страх!", meta: {} },
-  { text: " Ну и ладно.", meta: {}},
-  { text: " Это все не имеет смысла.", meta: {}},
-  { text: " И это факт!", meta: {}},
-  { text: " С твоей задачей даже обезьяна справится.", meta: {}},
-  { text: " Ты приемный!", meta: {}},
-  { text: " Аж дух захватывает!", meta: {}},
-  { text: " Работай больше!", meta: {}},
-  { text: " Работай усерднее!", meta: {}},
+  { text: " Ну и ладно.", meta: {} },
+  { text: " Это все не имеет смысла.", meta: {} },
+  { text: " И это факт!", meta: {} },
+  { text: " С твоей задачей даже обезьяна справится.", meta: {} },
+  { text: " Ты приемный!", meta: {} },
+  { text: " Аж дух захватывает!", meta: {} },
+  { text: " Работай больше!", meta: {} },
+  { text: " Работай усерднее!", meta: {} },
+  { text: " Ты обречен!", meta: {} },
+  { text: " Я разочарована!", meta: {} },
+  { text: " Не езди на автобусах!", meta: {} },
+  { text: " Не буди рыбу под электропроводами!", meta: {} },
+  { text: " Ты любишь запах хлорки... и ее вкус...", meta: {} },
+  { text: " Ты клеишь себе на шею кошачью шерсть!", meta: {} },
+  { text: " Перестань прятать мертвого голубя!", meta: {} },
+  { text: " У тебя морской скорбут!", meta: {} },
+  { text: " Умничка!", meta: {} },
+  { text: " У тебя сильный стресс!", meta: {} },
+  { text: " Держись!", meta: {} },
+  { text: " Ты безнадежен!", meta: {} },
+  { text: " Ты не веришь в луну!", meta: {} },
+  { text: " Я плюю тебе в рожу!", meta: {} },
+  { text: " Я харкаю тебе на лицо!", meta: {} },
+  { text: " Животное!", meta: {} },
+  { text: " Закатим тусняк?", meta: {} },
+  { text: " Все будет хорошо!", meta: {} },
+  { text: " Ты сядешь в тюрьму!", meta: {} },
+  { text: " Пьянь!", meta: {} },
+  { text: " Кибернетический бог пожирает своих детей!", meta: {} },
+  { text: " Кто-то следит за тобой!", meta: {} },
+  { text: " У тебя уже нет надежды!", meta: {} },
+  { text: " Ты не властен над своими воспоминаниями.", meta: {} },
+  { text: " Грибы все знают!", meta: {}},
+  { text: " Просто гротеск!", meta: {}},
+  { text: " Тебе здесь нельзя оставаться!", meta: {}},
+  { text: " Тебе здесь не место!", meta: {}},
   { text: " Ты обречен!", meta: {}},
-  { text: " Я разочарована!", meta: {}},
-  { text: " Не езди на автобусах!", meta: {}},
-  { text: " Не буди рыбу под электропроводами!", meta: {}},
-  { text: " Ты любишь запах хлорки... и ее вкус...", meta: {}},
-  { text: " Ты клеишь себе на шею кошачью шерсть!", meta: {}},
-  { text: " Перестань прятать мертвого голубя!", meta: {}},
-  { text: " У тебя морской скорбут!", meta: {}},
-  { text: " Умничка!", meta: {}},
-  { text: " У тебя сильный стресс!", meta: {}},
+  { text: " Мы обречены!", meta: {}},
+  { text: " На тебя написали заяву!", meta: {}},
+  { text: " Примите мое почтение!", meta: {}},
+  { text: " Хаос, вопли, рок-н-ролл.", meta: {}},
+  { text: " Едят ли мошки кошек?", meta: {}},
+  { text: " Едят ли кошки мошек?", meta: {}},
+  { text: " Ты меня угнетаешь.", meta: {}},
+  { text: " Мы погибнем!", meta: {}},
+  { text: " Мы все умрем!", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
+  // { text: "", meta: {}},
   // { text: "", meta: {}},
   // { text: "", meta: {}},
   // { text: "", meta: {}},
@@ -394,25 +463,19 @@ const second_arguments = [
 console.log(second_arguments.length);
 
 
-// function nt() {
-//   document.getElementById("name")[0].value;
-//   console.log(nt.value);
-// }
-
-
 
 const picker1 = createRandomPicker(first_arguments);
 const picker2 = createRandomPicker(second_arguments);
-// const inpt = document.getElementById("input")[0].value;
+
 
 function motiv() {
   let motivation = '';
   let name = document.getElementsByClassName('name')[0].value;
-    
-      if (name != "") {
-        name = `${name}! `;
-      }
-    
+
+  if (name != "") {
+    name = `${name}! `;
+  }
+
   // const random1st = Math.floor(Math.random() * first_arguments.length);
   // console.log(random1st);
   // const random2nd = Math.floor(Math.random() * second_arguments.length);
@@ -423,21 +486,48 @@ function motiv() {
   document.getElementById("motivation").innerHTML = motivation;
   document.getElementById("motivation").classList.add("motivation1");
   document.getElementById("motivation").classList.add("motivation1-wrapper");
-  
+
 
 }
+
 
 document.addEventListener("keydown", e => {
   // e.preventDefault();
   // e.stopPropagation();
   // if (e.code == "Space"
   if (
-    e.key == "m"
-    || e.key == "ь") {
+    e.code == "KeyM") {
     motiv();
     speakText();
+    clickCounter()
   }
 });
+
+let muteValue = false;
+document.querySelector(".muteBtn").style.background = "url('img/muteF.png')";
+mtueChng = document.querySelector(".muteBtn"); 
+
+function mute() {
+  if (muteValue == false) {
+    muteValue = true;
+    mtueChng.style.background = "url('img/muteActive.png')";
+  }
+  else {
+    (muteValue = false);
+    (mtueChng.style.background = "url('img/muteF.png')");
+  }
+}
+
+
+let clicker = 0;
+function clickCounter() {
+  updateDisplay(++clicker);
+}
+function updateDisplay(counter) {
+
+  document.getElementById("counterClick").innerHTML = counter;
+}
+
 
 
 
@@ -445,7 +535,9 @@ const textVoice = document.getElementById("motivation");
 const speakVoice = document.getElementsByClassName("button-36");
 
 function speakText() {
-
+  if (muteValue == true) {
+    return;
+  }
 
   window.speechSynthesis.cancel();
 
